@@ -12,24 +12,24 @@ public class PlayerControll : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        if (Input.GetKey(KeyCode.UpArrow))
+        if (Input.GetKey(KeyCode.A))
         {
-            GetComponent<Rigidbody2D>().velocity = new Vector2(0, 1);
+            GetComponent<Rigidbody2D>().velocity = new Vector2(-3, 0);
         }
 
-        if (Input.GetKey(KeyCode.DownArrow))
+        if (Input.GetKey(KeyCode.D))
         {
-            GetComponent<Rigidbody2D>().velocity = new Vector2(0, -1);
+            GetComponent<Rigidbody2D>().velocity = new Vector2(+3, 0);
         }
 
-        if (Input.GetKey(KeyCode.LeftArrow))
+        if (Input.GetKey(KeyCode.W))
         {
-            GetComponent<Rigidbody2D>().velocity = new Vector2(-1, 0);
+            GetComponent<Rigidbody2D>().velocity = new Vector2(0,+3);
         }
 
-        if (Input.GetKey(KeyCode.RightArrow))
+        if (Input.GetKey(KeyCode.S))
         {
-            GetComponent<Rigidbody2D>().velocity = new Vector2(1, 0);
+            GetComponent<Rigidbody2D>().velocity = new Vector2(0, -3);
         }
 
 
